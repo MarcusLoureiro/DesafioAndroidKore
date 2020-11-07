@@ -1,0 +1,7 @@
+CORES DO DESAFIO:
+
+Barra superior: 303F9F
+ToolBar: 3F51B5
+
+Botão Login: FF5252
+Botão Register: 8492A6
