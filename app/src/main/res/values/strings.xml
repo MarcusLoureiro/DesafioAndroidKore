@@ -5,4 +5,7 @@
     <string name="bt_login">LOG IN</string>
     <string name="or">OR</string>
     <string name="bt_register">REGISTER</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_Rpassword">Repeate password</string>
+    <string name="register">Register</string>
 </resources>
