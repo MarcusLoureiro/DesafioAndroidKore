@@ -107,7 +107,7 @@
 
 
     <Button
-        android:id="@+id/bt_r_register"
+        android:id="@+id/bt_register_main"
         android:layout_width="380dp"
         android:layout_height="55dp"
         android:layout_gravity="center"

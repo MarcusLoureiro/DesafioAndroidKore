@@ -13,6 +13,11 @@ class LoginActivity : AppCompatActivity() {
 
         Toast.makeText(this, "Bem-Vindo", Toast.LENGTH_SHORT).show()
 
+        bt_login.setOnClickListener{
+            val intent  =  Intent ( this ,  MainActivity :: class . java )
+            startActivity(intent)
+        }
+
         bt_register.setOnClickListener {
             val intent  =  Intent ( this ,  RegisterActivity :: class . java )
             startActivity(intent)

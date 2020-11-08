@@ -8,4 +8,8 @@
     <string name="hint_name">Name</string>
     <string name="hint_Rpassword">Repeate password</string>
     <string name="register">Register</string>
+    <string name="nome_restaurante">Tony Romas</string>
+    <string name="endereco_restaurante">AV. Lavandisca, 717 - Indianópolis, São Paulo</string>
+    <string name="hora_restaurante">Fecha às</string>
+    <string name="hora_restaurante_2">22:00</string>
 </resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="395dp"
+        android:layout_height="340dp"
+        android:padding="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/img_Restaurante"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image1"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/tv_Nome_Restaurante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="235dp"
+            android:layout_marginEnd="100dp"
+            android:text="@string/nome_restaurante"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_Endereço_Restaurante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="280dp"
+            android:textColor="@color/Gray"
+            android:textStyle="bold"
+            android:layout_marginEnd="32dp"
+            android:text="@string/endereco_restaurante"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="304dp"
+            android:textColor="@color/Gray"
+            android:textStyle="bold"
+            android:layout_marginEnd="150dp"
+            android:text="@string/hora_restaurante"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_Hora_Restaurante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="144dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/Gray"
+            android:textStyle="bold"
+            android:layout_marginEnd="115dp"
+            android:text="@string/hora_restaurante_2"
+            android:textSize="15sp" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
