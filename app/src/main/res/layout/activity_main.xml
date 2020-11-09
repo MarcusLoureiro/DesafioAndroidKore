@@ -13,23 +13,22 @@
 
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_margin="0dp"
-        android:background="@color/ToolBar"
-        android:padding="0dp"
+        android:layout_height="wrap_content"
         app:title="@string/app_name"
-        app:titleTextColor="@color/white">
-
-
-    </androidx.appcompat.widget.Toolbar>
+        app:titleTextColor="@color/white"
+        android:background="@color/ToolBar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRestaurantes"
-        android:layout_width="wrap_content"
+        android:layout_width="411dp"
         android:layout_height="586dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="17dp"
         app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager" />
 
 </LinearLayout>

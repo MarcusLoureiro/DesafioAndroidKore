@@ -9,6 +9,8 @@
 
     <ImageView
         android:id="@+id/img_splash"
+        tools:ignore="ContentDescription"
+        android:scaleType="centerCrop"
         android:layout_width="457dp"
         android:layout_height="711dp"
         android:src="@drawable/splash_image"

@@ -10,6 +10,7 @@
         android:layout_height="70dp"
         android:background="@color/ToolBar"
         app:title="@string/app_name"
+        android:layout_marginBottom="20dp"
         app:titleTextColor="@color/white">
 
 
@@ -18,8 +19,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:layout_marginTop="30dp">
+        android:background="@color/white">
 
         <EditText
             android:id="@+id/ed_email"
@@ -27,22 +27,22 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:hint="@string/hint_email"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="@color/BarraSuperior"
             android:textColorHint="@color/Gray"
             android:background="@color/white"
-            android:layout_margin="20dp"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
 
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:layout_marginTop="1dp">
+        android:background="@color/white">
 
         <EditText
             android:id="@+id/ed_password"
@@ -50,15 +50,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:hint="@string/hint_password"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="@color/BarraSuperior"
             android:textColorHint="@color/Gray"
             android:background="@color/white"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="0dp"/>
+            android:layout_marginRight="20dp"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,14 +74,21 @@
         android:textStyle="bold"
         android:background="@drawable/botao_customizado"/>
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/or"
-      android:textSize="15sp"
-      android:layout_marginLeft="195dp"
-      android:layout_marginTop="40dp"
-      />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/Gray"
+        android:layout_marginTop="50dp">
+
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="195dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/or"
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/bt_register"

@@ -1,10 +1,12 @@
 package com.example.desafioandroidcore
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.desafioandroidcore.Restaurante.Restaurante
+import com.example.desafioandroidcore.Restaurante.RestauranteActivity
 import com.example.desafioandroidcore.Restaurante.RestauranteAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -34,6 +36,8 @@ class MainActivity : AppCompatActivity(), RestauranteAdapter.onRestauranteClickL
     override  fun restauranteClick(position: Int){
         val restaurante = listaRestaurante.get(position)
         adapter.notifyItemChanged(position)
+        val intent  =  Intent ( this , RestauranteActivity :: class . java )
+        startActivity(intent)
         Toast.makeText(this, "DEU CERTO", Toast.LENGTH_SHORT).show()
     }
 
