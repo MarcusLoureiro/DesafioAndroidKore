@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesafioAndroidCore">
+        <activity android:name=".Restaurante.PratoActivity"/>
         <activity android:name=".Restaurante.RestauranteActivity"/>
         <activity android:name=".MainActivity"/>
         <activity android:name=".RegisterActivity"/>

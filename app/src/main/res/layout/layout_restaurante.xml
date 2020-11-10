@@ -6,15 +6,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools">
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarRestaurante"
         android:layout_width="match_parent"
         android:layout_height="280dp"
         app:navigationIcon="@drawable/arrow_back24"
-
         android:background="@drawable/image1">
 
         <TextView

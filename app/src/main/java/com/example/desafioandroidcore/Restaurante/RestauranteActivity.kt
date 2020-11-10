@@ -1,10 +1,13 @@
 package com.example.desafioandroidcore.Restaurante
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.desafioandroidcore.R
+import kotlinx.android.synthetic.main.layout_prato.*
+import kotlinx.android.synthetic.main.layout_register.*
 import kotlinx.android.synthetic.main.layout_restaurante.*
 
 class RestauranteActivity : AppCompatActivity(), PratoAdapter.onPratoClickListener {
@@ -14,6 +17,10 @@ class RestauranteActivity : AppCompatActivity(), PratoAdapter.onPratoClickListen
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_restaurante)
+        setSupportActionBar(toolbarRestaurante)
+        toolbarRestaurante.setNavigationOnClickListener(){
+            finish()
+        }
 
         rvPratos.adapter = adapter
         rvPratos.layoutManager = LinearLayoutManager(this)
@@ -38,6 +45,8 @@ class RestauranteActivity : AppCompatActivity(), PratoAdapter.onPratoClickListen
     override  fun pratoClick(position: Int){
         val prato = listaPrato.get(position)
         adapter.notifyItemChanged(position)
+        val intent  =  Intent ( this , PratoActivity :: class . java )
+        startActivity(intent)
         Toast.makeText(this, "DEU CERTO", Toast.LENGTH_SHORT).show()
     }
 
