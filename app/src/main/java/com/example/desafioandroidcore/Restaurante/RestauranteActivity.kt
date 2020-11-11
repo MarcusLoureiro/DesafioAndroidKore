@@ -36,16 +36,24 @@ class RestauranteActivity : AppCompatActivity(), PratoAdapter.onPratoClickListen
 
     fun getAllPratos(): ArrayList<Prato>{
         val prato1 = Prato(1,"Salada com molho Gengibre", R.drawable.image4)
-        val prato2 = Prato(1,"Salada com molho Gengibre", R.drawable.image4)
-        val prato3 = Prato(1,"Salada com molho Gengibre", R.drawable.image4)
-        val prato4 = Prato(1,"Salada com molho Gengibre", R.drawable.image4)
-        val prato5 = Prato(1,"Salada com molho Gengibre", R.drawable.image4)
-        val prato6 = Prato(1,"Salada com molho Gengibre", R.drawable.image4)
-        val prato7 = Prato(1,"Salada com molho Gengibre", R.drawable.image4)
-        val prato8 = Prato(1,"Salada com molho Gengibre", R.drawable.image4)
+        val prato2 = Prato(2,"Salada com molho Gengibre", R.drawable.image4)
+        val prato3 = Prato(3,"Salada com molho Gengibre", R.drawable.image4)
+        val prato4 = Prato(4,"Salada com molho Gengibre", R.drawable.image4)
+        val prato5 = Prato(5,"Salada com molho Gengibre", R.drawable.image4)
+        val prato6 = Prato(6,"Salada com molho Gengibre", R.drawable.image4)
+        val prato7 = Prato(7,"Salada com molho Gengibre", R.drawable.image4)
+        val prato8 = Prato(8,"Salada com molho Gengibre", R.drawable.image4)
+        val prato9 = Prato(9,"Salada com molho Gengibre", R.drawable.image4)
+        val prato10 = Prato(10,"Salada com molho Gengibre", R.drawable.image4)
+        val prato11 = Prato(11,"Salada com molho Gengibre", R.drawable.image4)
+        val prato12 = Prato(12,"Salada com molho Gengibre", R.drawable.image4)
+        val prato13 = Prato(13,"Salada com molho Gengibre", R.drawable.image4)
+        val prato14 = Prato(14,"Salada com molho Gengibre", R.drawable.image4)
+        val prato15 = Prato(15,"Salada com molho Gengibre", R.drawable.image4)
+        val prato16 = Prato(16,"Salada com molho Gengibre", R.drawable.image4)
 
 
-        return arrayListOf(prato1, prato2, prato3, prato4, prato5, prato6, prato7, prato8)
+        return arrayListOf(prato1, prato2, prato3, prato4, prato5, prato6, prato7, prato8, prato9, prato10, prato11, prato12, prato13, prato14, prato15, prato16)
 
     }
 

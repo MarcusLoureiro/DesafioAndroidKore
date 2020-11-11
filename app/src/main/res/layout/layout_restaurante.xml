@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools">
 
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarRestaurante"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="280dp"
-        app:navigationIcon="@drawable/arrow_back24"
-        android:background="@drawable/image1">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/title_toolbar"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarRestaurante"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/nome_restaurante"
-            android:textColor="@color/white"
-            android:textSize="30dp"
-            android:layout_marginTop="230dp"/>
+            android:layout_height="280dp"
+            app:navigationIcon="@drawable/arrow_back24"
+            android:background="@drawable/image1"
+            app:layout_scrollFlags="scroll|enterAlways">
 
-    </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:id="@+id/title_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/nome_restaurante"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:layout_marginTop="230dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,15 +40,20 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPratos"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:listitem="@layout/card_prato"/>
 
 
-</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
