@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity(), RestauranteAdapter.onRestauranteClickL
         adapter.notifyItemChanged(position)
         val intent  =  Intent ( this , RestauranteActivity :: class . java )
         startActivity(intent)
-        Toast.makeText(this, "DEU CERTO", Toast.LENGTH_SHORT).show()
     }
 
 

@@ -1,4 +1,4 @@
-package com.example.desafioandroidcore.Restaurante
+package com.example.desafioandroidcore.Prato
 
 class Prato(val id: Int, val nome: String, val img: Int) {
     override fun toString(): String {

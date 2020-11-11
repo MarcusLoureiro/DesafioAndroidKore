@@ -6,6 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools">
+
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarRestaurante"
         android:layout_width="match_parent"
@@ -14,6 +16,7 @@
         android:background="@drawable/image1">
 
         <TextView
+            android:id="@+id/title_toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/nome_restaurante"
@@ -35,11 +38,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPratos"
+        android:layout_marginStart="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
         tools:listitem="@layout/card_prato"/>
-
 
 
 </LinearLayout>

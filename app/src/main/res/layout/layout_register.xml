@@ -18,9 +18,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
-
+        android:background="@color/white"
+        app:hintTextColor="@color/textColor"
+        app:boxStrokeColor="@color/textColor">
         <EditText
+            android:textCursorDrawable="@color/ToolBar"
             android:id="@+id/ed_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,9 +42,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="@color/white"
+        app:hintTextColor="@color/textColor"
+        app:boxStrokeColor="@color/textColor">
 
         <EditText
+            android:textCursorDrawable="@color/ToolBar"
             android:id="@+id/ed_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,9 +67,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="@color/white"
+        app:hintTextColor="@color/textColor"
+        app:boxStrokeColor="@color/textColor">
 
         <EditText
+            android:textCursorDrawable="@color/ToolBar"
             android:id="@+id/ed_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,9 +92,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="@color/white"
+        app:hintTextColor="@color/textColor"
+        app:boxStrokeColor="@color/textColor">
 
         <EditText
+            android:textCursorDrawable="@color/ToolBar"
             android:id="@+id/ed_Rpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -108,11 +119,11 @@
 
     <Button
         android:id="@+id/bt_register_main"
-        android:layout_width="380dp"
+        android:layout_width="360dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginTop="250dp"
-        android:background="@drawable/botao_customizado"
+        android:backgroundTint="@color/Bt_cor"
         android:fontFamily="sans-serif"
         android:text="@string/bt_register"
         android:textColor="@color/white"

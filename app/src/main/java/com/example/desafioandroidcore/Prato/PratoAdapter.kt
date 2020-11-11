@@ -1,11 +1,10 @@
-package com.example.desafioandroidcore.Restaurante
+package com.example.desafioandroidcore.Prato
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.desafioandroidcore.R
 
@@ -13,7 +12,7 @@ class PratoAdapter(private var listaPrato: ArrayList<Prato>, val listener: onPra
     override fun onCreateViewHolder(
             parent: ViewGroup,
             viewType: Int
-    ):PratoAdapter.PratoViewHolder{
+    ): PratoViewHolder {
         var itemView = LayoutInflater.from(parent.context).inflate(R.layout.card_prato, parent, false)
         return PratoViewHolder(itemView)
 
@@ -21,7 +20,7 @@ class PratoAdapter(private var listaPrato: ArrayList<Prato>, val listener: onPra
 
     override fun getItemCount() = listaPrato.size
 
-    override fun onBindViewHolder(holder: PratoAdapter.PratoViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: PratoViewHolder, position: Int) {
         var prato = listaPrato.get(position)
 
         holder.tvNomePrato.text = prato.nome

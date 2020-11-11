@@ -19,9 +19,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="@color/white"
+        app:hintTextColor="@color/textColor"
+        app:boxStrokeColor="@color/textColor">
 
         <EditText
+            android:textCursorDrawable="@color/ToolBar"
             android:id="@+id/ed_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,9 +45,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="@color/white"
+        app:hintTextColor="@color/textColor"
+        app:boxStrokeColor="@color/textColor">
 
         <EditText
+            android:textCursorDrawable="@color/ToolBar"
             android:id="@+id/ed_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,40 +69,67 @@
 
     <Button
         android:id="@+id/bt_login"
-        android:layout_width="380dp"
+        android:layout_width="360dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:text="@string/bt_login"
-        android:textSize="18sp"
-        android:textColor="@color/white"
+        android:backgroundTint="@color/Bt_cor"
         android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:background="@drawable/botao_customizado"/>
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:background="@color/Gray"
+        android:text="@string/bt_login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="50dp">
 
-    </View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or2"
+            android:layout_margin="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.117"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="195dp"
-        android:layout_marginTop="0dp"
-        android:text="@string/or"
-        android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or2"
+            android:layout_margin="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.937"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <Button
         android:id="@+id/bt_register"
-        android:layout_width="380dp"
+        android:layout_width="360dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginTop="80dp"
-        android:background="@drawable/botao_customizado"
+        android:backgroundTint="@color/Bt_cor_register"
+
         android:fontFamily="sans-serif"
         android:text="@string/bt_register"
         android:textColor="@color/white"

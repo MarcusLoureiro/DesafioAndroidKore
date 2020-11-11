@@ -1,4 +1,4 @@
-package com.example.desafioandroidcore.Restaurante
+package com.example.desafioandroidcore.Prato
 
 import android.os.Bundle
 import android.widget.ImageView
