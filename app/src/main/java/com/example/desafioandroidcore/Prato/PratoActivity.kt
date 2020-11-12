@@ -9,6 +9,7 @@ import com.example.desafioandroidcore.R
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.layout_prato.*
 import kotlinx.android.synthetic.main.layout_register.*
+import kotlinx.android.synthetic.main.layout_restaurante.*
 
 class PratoActivity : AppCompatActivity() {
     lateinit var textDecricao: TextView

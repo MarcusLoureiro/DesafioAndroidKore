@@ -6,24 +6,52 @@
     android:orientation="vertical"
     android:background="@color/background">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarPrato"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="280dp"
-        app:navigationIcon="@drawable/arrow_back24"
-        android:background="@drawable/image4">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags = "scroll|enterAlways" >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/nome_prato"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textAlignment="textStart"
-            android:layout_marginTop="230dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags = "scroll|enterAlways" >
 
-    </androidx.appcompat.widget.Toolbar>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarPrato"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="@drawable/image4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/arrow_back24">
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/tv_name_prato"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="244dp"
+                android:text="@string/nome_prato"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbarRestaurante"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.934" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
         android:id="@+id/tv_descricaoPrato"

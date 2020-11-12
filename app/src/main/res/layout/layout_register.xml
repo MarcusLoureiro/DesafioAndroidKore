@@ -120,9 +120,9 @@
     <Button
         android:id="@+id/bt_register_main"
         android:layout_width="360dp"
-        android:layout_height="55dp"
+        android:layout_height="65dp"
         android:layout_gravity="center"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="280dp"
         android:backgroundTint="@color/Bt_cor"
         android:fontFamily="sans-serif"
         android:text="@string/bt_register"

@@ -51,7 +51,7 @@
             android:layout_marginTop="208dp"
             android:layout_marginEnd="32dp"
             android:text="@string/endereco_restaurante"
-            android:textColor="@color/Gray"
+            android:textColor="@color/textColor"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -64,7 +64,7 @@
             android:layout_marginTop="226dp"
             android:layout_marginEnd="150dp"
             android:text="@string/hora_restaurante"
-            android:textColor="@color/Gray"
+            android:textColor="@color/textColor"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -77,7 +77,7 @@
             android:layout_marginTop="106dp"
             android:layout_marginEnd="105dp"
             android:text="@string/hora_restaurante_2"
-            android:textColor="@color/Gray"
+            android:textColor="@color/textColor"
             android:textSize="15sp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>

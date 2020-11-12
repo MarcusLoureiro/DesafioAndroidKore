@@ -49,6 +49,8 @@
         app:hintTextColor="@color/textColor"
         app:boxStrokeColor="@color/textColor">
 
+
+
         <EditText
             android:textCursorDrawable="@color/ToolBar"
             android:id="@+id/ed_password"
@@ -56,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:hint="@string/hint_password"
             android:textSize="15sp"
             android:textColor="@color/BarraSuperior"
@@ -70,7 +72,7 @@
     <Button
         android:id="@+id/bt_login"
         android:layout_width="360dp"
-        android:layout_height="55dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/Bt_cor"
@@ -125,7 +127,7 @@
     <Button
         android:id="@+id/bt_register"
         android:layout_width="360dp"
-        android:layout_height="55dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="80dp"
         android:backgroundTint="@color/Bt_cor_register"

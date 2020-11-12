@@ -10,7 +10,7 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_register)
-        setSupportActionBar(toolbarPrato)
+        setSupportActionBar(toolbar)
         toolbar.setNavigationOnClickListener() {
             finish()
         }

@@ -27,7 +27,7 @@ class RestauranteActivity : AppCompatActivity(), PratoAdapter.onPratoClickListen
             finish()
         }
 
-        textToolbar = findViewById(R.id.title_toolbar)
+        textToolbar = findViewById(R.id.tv_name_restaurante)
         textToolbar.text = restaurante1.nome
         rvPratos.adapter = adapter
         rvPratos.layoutManager = GridLayoutManager(this, 2, LinearLayoutManager.VERTICAL, false)
